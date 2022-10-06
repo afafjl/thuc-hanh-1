@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="14" CornerRadius="0">
+            <Label Text="Nguyen Huy Phong - 19522011" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+        </Frame>
+        <Button Text="bai1" Clicked="button1_clicked"></Button>
+        <Button Text="bai2" Clicked="button2_clicked"></Button>
+        <Button Text="bai3" Clicked="button3_clicked"></Button>
+        <Button Text="bai4" Clicked="button4_clicked"></Button>
+        <Button Text="bai5" Clicked="button5_clicked"></Button>
+
+        
+    </StackLayout>
+
+</ContentPage>

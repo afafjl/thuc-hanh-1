@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page5">
+    <StackLayout>
+        <Frame Margin="10" HeightRequest="60">
+            <StackLayout>
+            <Label x:Name="ccc" Text=" " FontSize="20"  HorizontalOptions="End" VerticalOptions="Start">
+            </Label>
+              
+            <Label x:Name="bbb" Text="0" FontSize="30"  HorizontalOptions="End" VerticalOptions="End" >
+            </Label>
+            </StackLayout>
+        </Frame>
+        <Grid x:Name="aaa" Margin="10,30,10,0">
+
+        </Grid>
+    </StackLayout>  
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page4">
+    <ContentPage.Content>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Form Đăng Ký" FontAttributes="Bold" TextColor="Pink" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+
+            <Image Source="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_1024/MTc2MjcyMDUzODI0MDA1Mjkz/5-most-beautiful-dog-breeds-in-the-world.webp"
+                   HorizontalOptions="Center" VerticalOptions="Center"
+                   WidthRequest="200"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   
+                   ></Image>
+
+            <Label Text="Name:" TextColor="Blue" VerticalTextAlignment="Center" Grid.Row="2" FontSize="Large"  Grid.Column="0"></Label>
+            <Entry x:Name="Name" Grid.Row="2" Grid.Column="1" Placeholder="Enter your name"></Entry>
+
+            <Label Text="Email:" TextColor="Blue" VerticalTextAlignment="Center" Grid.Row="3" FontSize="Large"  Grid.Column="0"></Label>
+            <Entry x:Name="Email" Grid.Row="3" Grid.Column="1" Keyboard="Email" Placeholder="Enter your email"></Entry>
+
+            <Label Text="Birthday:" TextColor="Blue" VerticalTextAlignment="Center" FontSize="Large"  Grid.Row="4" Grid.Column="0"></Label>
+            <DatePicker x:Name="Birthday"  Grid.Row="4" Grid.Column="1"  ></DatePicker>
+
+            <Label Text="Male ?:" TextColor="Blue" VerticalTextAlignment="Center" FontSize="Large"  Grid.Row="5" Grid.Column="0"></Label>
+            <Switch x:Name="Gender" Grid.Row="5" Grid.Column="1"  VerticalOptions="Center" HorizontalOptions="Start" ></Switch>
+
+            <Label Text="Age: " x:Name="AgeValue" TextColor="Blue" VerticalTextAlignment="Center" FontSize="Large"  Grid.Row="6" Grid.Column="0"></Label>
+            <Slider x:Name="Age" ValueChanged="Age_ValueChanged" Maximum="150" Grid.Row="6" Grid.Column="1" MaximumTrackColor="black" MinimumTrackColor="red"></Slider>
+
+            <Button Grid.Row="7" Grid.Column="0" Clicked="Button_Clicked" Text="Submit" VerticalOptions="Center" HorizontalOptions="End" ></Button>
+            <Button Grid.Row="7" Grid.Column="1" Clicked="Button_Clicked_1" Text="Cancel" HorizontalOptions="Start" VerticalOptions="Center"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
